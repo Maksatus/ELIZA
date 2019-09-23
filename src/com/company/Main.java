@@ -37,7 +37,8 @@ public class Main {
             }
 
             for (int i = 0; i < question.size(); i++) {
-                answer.add(prop_a.getProperty(question.get(i)));
+                int rand = 1 + (int) (Math.random() * 3);
+                answer.add(prop_a.getProperty(question.get(i) + Integer.toString(rand)));
             }
 
             System.out.println(answer);
